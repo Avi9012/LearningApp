@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <activity
+        android:id="@+id/nav_home"
+        android:name="com.example.qa.HomeActivity"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_home" />
+
+    <activity
+        android:id="@+id/QA"
+        android:name="com.example.qa.ScrollingActivity"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/activity_scrolling" />
+
+    <activity
+        android:id="@+id/Chatbox"
+        android:name="com.example.qa.LoggedIn"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/activity_loggedin" />
+    <activity
+        android:id="@+id/profile"
+        android:name="com.example.qa.UserProfile"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/activity_loggedin" />
+
+</navigation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/newsapp"
+    android:layout_height="match_parent"
+    tools:context=".admin_login">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:fitsSystemWindows="true"
+        app:cardCornerRadius="8dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/bg1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="  Email Id"
+                android:fitsSystemWindows="true"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email"/>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText5"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:fitsSystemWindows="true"
+                android:inputType="textPassword"
+                android:hint="  PassWord"
+                android:drawableLeft="@drawable/ic_pass" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/ic_keyboard_tab_black_24dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:fitsSystemWindows="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="Hello Admin!"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fitsSystemWindows="true"
+        android:textSize="37sp"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:gravity="start" />
+
+</RelativeLayout>

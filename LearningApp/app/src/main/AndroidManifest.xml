@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.qa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/TabAppTheme">
+        <activity android:name=".UseransActivity"></activity>
+        <activity android:name=".ShowAnswers" />
+        <activity
+            android:name=".PostQuestion"
+            android:theme="@style/TabAppTheme.NoActionBar" />
+        <activity
+            android:name=".LoggedIn"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/MyActionbar" />
+        <activity
+            android:name=".Messages"
+            android:parentActivityName=".LoggedIn"
+            android:theme="@style/MyActionbar" />
+        <activity
+            android:name=".UserProfile"
+            android:parentActivityName=".LoggedIn"
+            android:theme="@style/MyActionbar" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/TabAppTheme.NoActionBar">
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/TabAppTheme.NoActionBar" />
+        <activity
+            android:name=".admin_login"
+            android:parentActivityName=".LearningApp_activity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".LearningApp_activity"
+            android:theme="@style/TabAppTheme.NoActionBar" />
+        <activity
+            android:name=".splash_screen"
+            android:theme="@style/TabAppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/TabAppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".LearningApp_activity"/>
+        <activity
+            android:name=".NewsDetailActivity"
+            android:theme="@style/TabAppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

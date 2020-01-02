@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="75dp"
+    android:background="@drawable/back_mobile1"
+    android:orientation="vertical"
+    tools:context=".LearningApp_activity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Learning App..."
+        android:textSize="80dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/outline"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="100dp"
+        android:text="Admin"
+        android:textStyle="italic|bold"
+        android:textSize="40dp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorWhite"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/admin"
+        android:text="User"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="casual"
+        android:textColor="@color/colorWhite"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>
