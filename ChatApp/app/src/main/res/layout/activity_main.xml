@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="75dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="ChatApp"
+        android:textSize="90dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/welcome"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        android:text="Login"
+        android:textColor="@color/colorwhite"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:id="@+id/regs"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="@color/colorwhite"
+        android:background="@drawable/shape"/>
+
+</LinearLayout>

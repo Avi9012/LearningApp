@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="267dp"
+        android:background="@drawable/edittextbox"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:padding="5dp" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/pass"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/colorwhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/shape"
+        android:text="Log In" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="-34dp"
+        android:gravity="center"
+        android:text="Forgot Password ?"
+        android:textColor="@color/colorBlue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="cursive"
+        android:text="Log In Page..."
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/edittextbox"
+        android:ems="10"
+        android:textColor="@color/colorBlack"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="5dp" />
+
+
+</RelativeLayout>
